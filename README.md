@@ -41,6 +41,23 @@ VRM is the de facto standard for VTuber avatars. Building on VRM ensures direct 
 | Phase 4 | Verlet/PBD hair physics implementation | ⬜ |
 | Phase 5 | Integration & portfolio demo | ⬜ |
 
+## Mac Prototype Recovery (2025-02 → 2026-03)
+
+Scripts recovered from Mac Unity project (`~/Desktop/Unity/My project/`):
+
+| File | Description |
+|---|---|
+| `Assets/Scripts/Prototypes/PendulumTest.cs` | Pendulum swing simulation (Slerp rotation) |
+| `Assets/Scripts/Prototypes/ChainController.cs` | Mouse-following chain head |
+| `Assets/Scripts/Prototypes/ChainSpawner.cs` | Dynamic chain prefab instantiation |
+| `Assets/Scripts/FaceController.cs` | BlendShape enumeration & control |
+| `Assets/Scripts/Prototypes/CubePhysicsMover.cs` | Physics mover (reference) |
+| `Assets/Scripts/Prototypes/CubeRotator.cs` | Basic rotation (reference) |
+
+**UniVRM version used on Mac**: `0.131.0` (UniVRM + UniGLTF, local packages)
+
+> Note: No custom Verlet script existed on Mac — hair physics relied on UniVRM's FastSpringBone. The custom Verlet/PBD engine starts from Phase 4.
+
 ## License
 
 MIT
